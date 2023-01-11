@@ -9,33 +9,36 @@
 
     <style>
     *{
-        margin: 0;
+        margin:0;
         padding:0;
         font-family: 'Times New Roman', Times, serif;
     }
+
+    @media all and (min-width:1100px){
 
     .banner{
         width:100%;
         height: 100vh;
         background-image: linear-gradient(rgba(0,0,0,0.75)
         ,rgba(155, 125, 125, 0.75)),url("images/cornell.jpg");
-        background-size: cover;
-        background-position: center;
+        background-size:cover;
+        background-position:center;
     }
 
-    img.Profile_pic{
-
-        height: 300px;
-        width: 300px;
-        position:fixed;
-        left: 575px;
-        top:300px;
+    .profile_pic{
+        margin: 10%;
+        padding: 15%;
+        background-image: url("images/Cornell_ID-m.png");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
+
 
     p.name{
         font-size:xx-large;
         color: azure;
-        position: fixed;
+        position: absolute;
         left:100px;
         top:28px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -44,11 +47,38 @@
     img.bear{
         height:150px ;
         width:150px;
-        position:fixed;
-
+        position:absolute;
         top:-20px;
     }
 
+    .navbar{
+        width:100%;
+        padding: 35px 0;
+        display: inline-block;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .navbar ul {
+       float:right; 
+    }
+
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: x-large;
+    }
+
+    }
     
 
     </style>
@@ -56,9 +86,22 @@
 </head>
 <body>
     <div class = "banner">
-        <img class="Profile_pic" src="images/Cornell_ID-m.png" alt="Johnny Martinez">
         <p class="name">Johnny Martinez</p>
         <img class="bear" src="images/bear1.png" alt="Johnny Martinez">
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </div>    
+
+        <div class="profile_pic">
+        </div>
+
     </div>
 </body>
 </html>
