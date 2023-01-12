@@ -114,6 +114,7 @@
         bottom: 35%;
 
     }
+
     }
     @media all and (max-width:1180px) and (min-width:831px){
         .banner{
@@ -216,7 +217,105 @@
 
     }
     }
-    @media all and (max-width:830px){}
+    @media all and (max-width:830px){
+        .banner{
+        width:100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.75)
+        ,rgba(155, 125, 125, 0.75)),url("images/cornell.jpg");
+        background-size:cover;
+        background-position:center;
+    }
+
+
+    p.name{
+        font-size:xx-large;
+        color: azure;
+        position: absolute;
+        left:100px;
+        top:28px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    img.bear{
+        height:150px ;
+        width:150px;
+        position:absolute;
+        top:-20px;
+    }
+
+    .navbar{
+        width:100%;
+        padding: 750px 0;
+        display: inline-block;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .navbar ul {
+       float:left; 
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: x-large;
+    }
+
+    .navbar ul li::after{
+        content:'';
+        height: 3px;
+        width: 0;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+
+    img.Profile_pic{
+        height: 0px;
+        width: 0px;
+        position:absolute;
+        left: 50%;
+        top:2%;
+        bottom: 35%;
+    }
+    
+    h1.hi{
+        position: absolute;
+        font-size: 120px;
+        color:#fff;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        left:10%;
+        top:27%;
+        bottom:35%;
+    }
+
+    p.intro{
+        position: absolute;
+        font-size: 25px;
+        color: #fff;
+        font-style: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width:400px;
+        left:10%;
+        top:45%;
+        bottom: 35%;
+
+    }
+    }
 
 
     </style>
