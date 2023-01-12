@@ -25,15 +25,14 @@
         background-position:center;
     }
 
-    .profile_pic{
-        margin: 10%;
-        padding: 15%;
-        background-image: url("images/Cornell_ID-m.png");
-        background-size: 300px;
-        background-repeat: no-repeat;
-        background-position: 50%;
-    }
+    img.Profile_pic{
 
+        height: 300px;
+        width: 300px;
+        position:absolute;
+        left: 575px;
+        bottom:35%;
+    }
 
     p.name{
         font-size:xx-large;
@@ -86,6 +85,7 @@
 </head>
 <body>
     <div class = "banner">
+        <img class="Profile_pic" src="images/Cornell_ID-m.png" alt="Johnny Martinez">
         <p class="name">Johnny Martinez</p>
         <img class="bear" src="images/bear1.png" alt="Johnny Martinez">
         
@@ -98,10 +98,7 @@
                 
             </ul>
         </div>    
-
-        <div class="profile_pic">
-        </div>
-
+    
     </div>
 </body>
 </html>

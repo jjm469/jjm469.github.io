@@ -25,14 +25,6 @@
         background-position:center;
     }
 
-    img.Profile_pic{
-
-        height: 300px;
-        width: 300px;
-        position:absolute;
-        left: 575px;
-        bottom:35%;
-    }
 
     p.name{
         font-size:xx-large;
@@ -61,11 +53,11 @@
        float:right; 
     }
 
-
     .navbar ul li {
         list-style: none;
         display: inline-block;
         margin: 0 20px;
+        position: relative;
         
     }
 
@@ -77,15 +69,58 @@
         font-size: x-large;
     }
 
+    .navbar ul li::after{
+        content:'';
+        height: 3px;
+        width: 0;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+
+    }
+
+    img.Profile_pic{
+        height: 300px;
+        width: 300px;
+        position:absolute;
+        left: 425px;
+        top:30%;
+        bottom: 35%;
     }
     
+    h1.hi{
+        position: absolute;
+        font-size: 120px;
+        color:#fff;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        left:780px;
+        top:30%;
+        bottom: 35%;
+    }
+
+    p.intro{
+        position: absolute;
+        font-size: 25px;
+        color: #fff;
+        font-style: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width:400px;
+        left:780px;
+        top:45%;
+        bottom: 35%;
+
+    }
 
     </style>
 
 </head>
 <body>
     <div class = "banner">
-        <img class="Profile_pic" src="images/Cornell_ID-m.png" alt="Johnny Martinez">
         <p class="name">Johnny Martinez</p>
         <img class="bear" src="images/bear1.png" alt="Johnny Martinez">
         
@@ -98,6 +133,12 @@
                 
             </ul>
         </div>    
+
+        <div class="welcome_image">
+            <img class="Profile_pic" src="images/Cornell_ID-m.png" alt="Johnny Martinez">
+            <h1 class="hi">Hello!</h1>
+            <p class="intro">My name is Johnny, and I am a sophmore studying ECE (Electrical and Computer Engineering) and CS at Cornell University! Please feel free to explore my page and look into some of my projects! </p>    
+        </div>
     
     </div>
 </body>
