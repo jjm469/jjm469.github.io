@@ -1,0 +1,10 @@
+- learning css/html
+- hosting website 
+- getting background image to fit page properly (set background css instead of html)
+- setting element attributes 
+- White parts of screen due to element width 
+- formating screen for different aspect ratios
+- Mobile version of website
+- element moving/positioning
+- setting up links
+- setting up download links 
