@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johnny's Page</title>
+    <link rel="icon" href="images/switch.png">
 
     <style>
 
@@ -23,13 +24,18 @@
         background-position:center;
     }
 
+    .text{
+        position: absolute;
+        top:7.5%;
+        left:12.5%;
+    }
+
+
     h1.title{
         position: absolute;
         font-size: 100px;
         color:#fff;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        left:60px;
-        top:30px;
     }
 
     p.about{
@@ -40,13 +46,49 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
+    .navbar{
+        width:100%;
+        display: inline-block;
+        align-items:center;
+        justify-content: space-between;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        padding: 1em;
+    }
+    .navbar ul li{
+        padding: .25em;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: capitalize;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: xx-large;
+
+    }
+
     </style>
 
 </head>
 <body>
-    
-    <div class = "banner">
+    <div class = "banner"></div>
+    <div class = "text">
         <h1 class="title">Projects</h1>
     </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="Reaction_Time_Game.html">Reaction Time Game - 3/2022</a></li>
+            <li><a href="Microprocessor.html">Microprocessor - 4/2022</a></li>
+            <li><a href="RFID_Reader.html">RFID Reader - 4/2022</a></li>
+            <li><a href="BRH_Energy_Calc.html">Big Red Hacks Energy Calculator - 11/2022</a></li>
+            <li><a href="Pente_AI.html">Pente AI - 11/2022</a></li>
+            <li><a href="Frequency_Filter.html">Frequency Filter Circuit - 11/2022</a></li>
+            <li><a href="Shortest_Path.html">Shortest Path Algorithm - 12/2022</a></li>
+        
+        </ul>
+    </div>   
 </body>
 </html>
